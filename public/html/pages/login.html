@@ -1,0 +1,20 @@
+<section class="pagina-autenticacao">
+  <form id="form-login" class="formulario-autenticacao">
+    <h1>Entrar</h1>
+    <p class="texto-secundario">Entre para encontrar uma partida.</p>
+
+    <label for="email">E-mail</label>
+    <input id="email" name="email" type="email" autocomplete="email" required />
+
+    <label for="senha">Senha</label>
+    <div class="campo-senha">
+      <input id="senha" name="senha" type="password" autocomplete="current-password" required />
+      <button type="button" data-alternar-senha="senha" aria-label="Mostrar senha">Mostrar</button>
+    </div>
+
+    <p id="mensagem-login" class="mensagem" role="alert"></p>
+    <button class="botao botao-principal" type="submit">Entrar</button>
+    <a href="/cadastro" data-navigo>Não possui conta? Cadastre-se</a>
+  </form>
+</section>
+

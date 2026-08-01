@@ -1,0 +1,26 @@
+<dialog id="dialog-criar-sala" class="modal">
+  <form id="form-criar-sala" class="conteudo-modal">
+    <h2>Criar sala</h2>
+
+    <label for="nome-da-sala">Nome da sala</label>
+    <input id="nome-da-sala" name="nome" type="text" required />
+
+    <label for="visibilidade-da-sala">Visibilidade</label>
+    <select id="visibilidade-da-sala" name="visibilidade">
+      <option value="publica">Pública</option>
+      <option value="privada">Privada</option>
+    </select>
+
+    <div id="grupo-senha-sala" hidden>
+      <label for="senha-da-sala">Senha</label>
+      <input id="senha-da-sala" name="senha" type="password" autocomplete="new-password" />
+    </div>
+
+    <p id="mensagem-criar-sala" class="mensagem" role="alert"></p>
+    <div class="acoes-modal">
+      <button id="cancelar-criar-sala" class="botao botao-secundario" type="button">Cancelar</button>
+      <button class="botao botao-principal" type="submit">Criar</button>
+    </div>
+  </form>
+</dialog>
+

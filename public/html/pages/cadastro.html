@@ -1,0 +1,22 @@
+<section class="pagina-autenticacao">
+  <form id="form-cadastro" class="formulario-autenticacao">
+    <h1>Criar conta</h1>
+
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" type="text" autocomplete="name" required />
+
+    <label for="email">E-mail</label>
+    <input id="email" name="email" type="email" autocomplete="email" required />
+
+    <label for="senha">Senha</label>
+    <div class="campo-senha">
+      <input id="senha" name="senha" type="password" autocomplete="new-password" required />
+      <button type="button" data-alternar-senha="senha" aria-label="Mostrar senha">Mostrar</button>
+    </div>
+
+    <p id="mensagem-cadastro" class="mensagem" role="alert"></p>
+    <button class="botao botao-principal" type="submit">Cadastrar</button>
+    <a href="/login" data-navigo>Já possui conta? Entre</a>
+  </form>
+</section>
+

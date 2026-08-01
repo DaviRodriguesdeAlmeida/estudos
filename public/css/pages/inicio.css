@@ -1,0 +1,23 @@
+.pagina-inicio {
+  padding-block: 3rem;
+}
+
+.topo-inicio {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.topo-inicio h1 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 580px) {
+  .topo-inicio {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+

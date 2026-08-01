@@ -1,0 +1,29 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  padding: 0 5vw;
+  background: #fff;
+  border-bottom: 1px solid #e3e8f1;
+}
+
+.marca {
+  color: #172033;
+  font-size: 1.15rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.usuario-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 520px) {
+  #nome-usuario-cabecalho {
+    display: none;
+  }
+}
+

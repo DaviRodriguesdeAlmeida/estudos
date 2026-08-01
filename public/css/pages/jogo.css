@@ -1,0 +1,112 @@
+.pagina-jogo {
+  padding-block: 2.5rem;
+}
+
+.topo-jogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.topo-jogo h1 {
+  margin-bottom: 0;
+}
+
+.area-jogo {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(280px, 420px) minmax(180px, 1fr);
+  align-items: center;
+  gap: clamp(1rem, 4vw, 3rem);
+  margin-top: 2rem;
+}
+
+.jogador {
+  min-height: 310px;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #e3e8f1;
+  border-radius: 1.25rem;
+  box-shadow: var(--sombra);
+  text-align: center;
+}
+
+.acoes-jogador {
+  display: flex;
+  justify-content: center;
+  min-height: 42px;
+  margin-bottom: 1.25rem;
+}
+
+.foto-jogador {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.jogador h2:empty::after {
+  content: "Aguardando jogador";
+  color: #94a3b8;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #1e3a8a;
+  border: 8px solid #1e3a8a;
+  border-radius: 1.1rem;
+  gap: 6px;
+  box-shadow: var(--sombra);
+}
+
+.casa {
+  display: grid;
+  min-width: 0;
+  color: #1d4ed8;
+  background: #fff;
+  border: 0;
+  place-items: center;
+  cursor: pointer;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 900;
+}
+
+.casa:hover {
+  background: #eff6ff;
+}
+
+@media (max-width: 850px) {
+  .area-jogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabuleiro {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: min(100%, 440px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .topo-jogo {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .area-jogo {
+    grid-template-columns: 1fr;
+  }
+
+  .tabuleiro {
+    grid-column: 1;
+  }
+
+  .jogador {
+    min-height: auto;
+  }
+}
+

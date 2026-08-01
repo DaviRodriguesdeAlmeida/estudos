@@ -1,0 +1,49 @@
+.pagina-autenticacao {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at top left, rgb(37 99 235 / 18%), transparent 35%),
+    #f4f7fb;
+}
+
+.formulario-autenticacao {
+  display: grid;
+  width: min(430px, 100%);
+  gap: 0.65rem;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  background: #fff;
+  border: 1px solid #e3e8f1;
+  border-radius: 1.25rem;
+  box-shadow: var(--sombra);
+}
+
+.formulario-autenticacao h1 {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.formulario-autenticacao > .botao {
+  margin-top: 0.25rem;
+}
+
+.formulario-autenticacao > a {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.campo-senha {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.campo-senha button {
+  padding-inline: 0.9rem;
+  color: var(--azul);
+  background: #eef4ff;
+  border: 0;
+  border-radius: 0.65rem;
+  cursor: pointer;
+}
+
